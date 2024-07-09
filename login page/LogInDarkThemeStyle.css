@@ -1,0 +1,102 @@
+body{
+    background-image: radial-gradient(#1F2833,#0d131b,#1F2833);
+}
+
+.box{
+    display:  flex;
+    flex-direction: column;
+    gap: 30px;
+    color: #fff;
+    background-color: rgba(245, 245, 245, 0.362);
+    margin: 100px auto;
+    width: 40%;
+    height: 500px;
+    border-radius: 10px;
+    padding: 20;
+    position: relative;
+}
+
+#sun{
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.box .checkbox{
+    display: flex;
+    justify-content: space-evenly;
+}
+.link{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.login, .link{
+    text-align: center;
+}
+input::placeholder{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.9em;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0 auto;
+    width: 60%;
+    gap: 20px;
+    border-radius: 20px;
+}
+.input input{
+    border-radius: 20px;
+    border: none;
+    padding: 8px;
+}
+.box #login{
+    height: 50px;
+    width: 20%;
+    border-radius: 20px;
+    background-color: blue;
+    cursor: pointer;
+    color: white;
+    font-size: large;
+    padding: 10px;
+}
+.box #login:hover{
+    background-color: rgb(0, 62, 247);
+}
+.checkbox span a, .link p a{
+    color: blue;
+}
+.link p a:hover, .checkbox span a:hover{
+    color: #fff;
+    cursor: pointer;
+}
+.login h1{
+    color: #fff;
+}
+.checkbox input:hover, .checkbox:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.btn{
+    animation-name: btn;
+    animation-duration: 5s;
+}
+
+@keyframes btn{
+    from{
+        opacity: 0%;
+
+    }
+    to{
+        opacity: 100%;
+    }
+} 
