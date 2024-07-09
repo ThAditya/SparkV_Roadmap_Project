@@ -1,0 +1,89 @@
+body{
+    background-image: radial-gradient(#1F2833,#0d131b,#1F2833);
+}
+
+.box{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    gap: 15px;    
+    background-color: rgba(245, 245, 245, 0.362);
+    margin: 100px auto;
+    width: 500px;
+    height: 500px;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+#sun{
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+
+
+.box input{
+    border: none;
+    width: 60%;
+    padding: 10px;
+    border-radius: 20px;
+}
+input::placeholder{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.9em;
+}
+
+button{
+    height: 40px;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: large;
+}
+Signup:hover{
+    color: white;
+    background-color: #66FCF1 ! important;
+}
+
+/* .buttons{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}  */
+
+.buttons button{
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 200px; */
+}
+
+
+.btn{
+    /* transition: all ease-in 2s; */
+    animation-name: btn;
+    animation-duration: 5s;
+    /* animation: btn 5s ease-in-out;
+    background-color: blue;
+    display: none; */
+}
+
+@keyframes btn{
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+        /* display: inherit; */
+    }
+} 
